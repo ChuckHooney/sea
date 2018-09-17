@@ -10,45 +10,58 @@ int main() {
   int random1 = random() ;
   //printf("%d\n", random1);
 
+//player1
   int Echo ;
   Echo = random1 ;
   int Ditto ;
   Ditto = 3 ;
-  int EchoDitto ; // Player 1
-  EchoDitto = Echo % Ditto ;
+  int player1 ; // Player 1
+  player1 = Echo % Ditto ;
   //printf("%d\n", EchoDitto) ;
 
-  if (EchoDitto == ROCK ) {
-    printf ("Player 1-Rock\n") ;
-  } else if (EchoDitto == PAPER) {
-    printf ("Player 1-Paper\n") ;
-  } else if (EchoDitto == SCISSORS)
-    printf ("Player 1-Scissors\n") ;
+  if (player1 == ROCK ) {
+    printf ("PLayer 1-Rock vs") ;
+  } else if (player1 == PAPER) {
+    printf ("PLayer 1-Paper vs") ;
+  } else if (player1 == SCISSORS)
+    printf ("PLayer 1-Scissors vs") ;
 
 
   int random2 = random() ;
   //printf ("%d\n", random2) ;
 
-
+//player2
   int Echo2 ;
   Echo2 = random2 ;
   int Ditto2 ;
   Ditto2 = 3 ;
-  int EchoDitto2 ; // Player 2
-  EchoDitto2 = Echo2 % Ditto2 ;
+  int player2 ; // Player 2
+  player2 = Echo2 % Ditto2 ;
   //printf("%d\n", EchoDitto2) ;
 
-  if (EchoDitto2 == 0 ) {
-    printf ("Player 2-Rock\n") ;
-  } else if (EchoDitto2 == 1) {
-    printf ("Player 2-Paper\n") ;
-  } else if (EchoDitto2 == 2)
-    printf ("Player 2-Scissors\n") ;
+  if (player2 == ROCK ) {
+    printf (" PLayer 2-Rock\n") ;
+  } else if (player2 == PAPER) {
+    printf (" PLayer 2-Paper\n") ;
+  } else if (player2 == SCISSORS) {
+    printf (" PLayer 2-Scissors\n") ;
+  }
 
-    if (EchoDitto == EchoDitto2){
+//rules
+  if (player1 == player2){
       printf ("Tie\n") ;
-    }else if ((EchoDitto == ROCK) && (EchoDitto2 == 1)){
-      printf ("PLayer2 Wins\n") ;
-    }
+  }else if ((player1 == ROCK) && (player2 == PAPER)){
+    printf ("player2 Wins\n") ;
+  }else if ((player1 == PAPER) && (player2 == ROCK)){
+    printf ("player1 Wins\n") ;
+  }else if ((player1 == ROCK) && (player2 == SCISSORS)){
+    printf ("player1 Wins\n") ;
+  }else if ((player1 == SCISSORS) && (player2 == ROCK)){
+    printf ("player2 Wins\n") ;
+  }else if ((player1 == PAPER) && (player2 == SCISSORS)){
+    printf ("player2 Wins\n") ;
+  }else if ((player1 == SCISSORS) && (player2 == PAPER)){
+    printf ("player1 Wins\n") ;
+  }
 
 }
