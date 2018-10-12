@@ -9,7 +9,7 @@ void OddEven (int x){
   }
   else if (z == 1){
     printf ("%d is odd\n", x) ;
-  }  
+  }
 }
 
 int main (){
