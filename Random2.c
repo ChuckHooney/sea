@@ -14,7 +14,7 @@ void randomx (int x) {
 int main(){
 //mod
   srandom (time (0));
-  
+
   randomx (10);
   randomx (10);
   randomx (10);
