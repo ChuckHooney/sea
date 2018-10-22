@@ -2,14 +2,12 @@
 
 void table (int x,int y) {
 
-  for (int m=x; m<=50; m++, y++) {
-      printf ("%d * %d =%d\n", x, y, x*y) ;
+  for (int m=1; m<=y; m++) {
+      printf ("%d * %d =%d\n", x,m, m*x) ;
   }
 }
 
 
 int main (){
-  table (5,2) ;
-  table (5,3) ;
-  table (5,4) ;
+  table (12,5) ;
 }
